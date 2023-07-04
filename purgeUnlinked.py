@@ -12,8 +12,7 @@ for file in os.listdir(sys.argv[1]):
 	numLinks = subprocess.check_output(cmd)
 	#print numLinks
 	if (numLinks == '\'1\''):
-		print "deleting " + file
+		print("deleting " + file)
 		delcmd = "rm " + cmd[2]
 		#print delcmd
 		os.system(delcmd)
-
